@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumma Gujjar Nihari | Asli Zaiqa, Asli Tarka | Karachi</title>
+    <meta name="description" content="Jumma Gujjar Nihari New - Famous Desi Ghee Nihari, Biryani & Pulao in C1 Area, Liaquatabad, Karachi. Open 24 hours.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nihari': {
+                            black: '#0c0c0c',
+                            charcoal: '#1a1a1a',
+                            brown: '#3d2314',
+                            gold: '#c9a227',
+                            orange: '#e85d04',
+                            cream: '#f5f0e6',
+                            red: '#9b2226',
+                            green: '#386641'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0c0c0c;
+            color: #f5f0e6;
+            overflow-x: hidden;
+        }
+        
+        .glass-nav {
+            background: rgba(12, 12, 12, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(201, 162, 39, 0.15);
+        }
+
+        .gold-text {
+            background: linear-gradient(135deg, #c9a227 0%, #e85d04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .menu-card {
+            background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+            border: 1px solid rgba(201, 162, 39, 0.12);
+            transition: all 0.3s ease;
+        }
+
+        .menu-card:hover {
+            border-color: rgba(201, 162, 39, 0.5);
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(232, 93, 4, 0.08);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(201,162,39,0.08) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+
+        .steam {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.4; }
+            50% { transform: translateY(-20px) rotate(5deg); opacity: 0.7; }
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0c0c0c; }
+        ::-webkit-scrollbar-thumb { background: #c9a227; border-radius: 4px; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full bg-gradient-to-br from-nihari-gold to-nihari-orange flex items-center justify-center shadow-lg">
+                        <i class="fas fa-utensils text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-serif text-2xl font-bold text-white tracking-wide">JUMMA GUJJAR</h1>
+                        <p class="text-[10px] text-nihari-gold tracking-[0.3em] uppercase font-semibold">Nihari New • Since 1980</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-nihari-gold transition-colors text-sm font-medium tracking-wide">HOME</a>
+                    <a href="#menu" class="text-gray-300 hover:text-nihari-gold transition-colors text-sm font-medium tracking-wide">MENU</a>
+                    <a href="#about" class="text-gray-300 hover:text-nihari-gold transition-colors text-sm font-medium tracking-wide">ABOUT</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-nihari-gold transition-colors text-sm font-medium tracking-wide">REVIEWS</a>
+                    <a href="#contact" class="text-gray-300 hover:text-nihari-gold transition-colors text-sm font-medium tracking-wide">CONTACT</a>
+                    <a href="tel:+923001234567" class="bg-gradient-to-r from-nihari-orange to-nihari-red text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:shadow-orange-500/20 transition-all transform hover:scale-105 flex items-center gap-2 text-sm">
+                        <i class="fas fa-phone-alt text-xs"></i>
+                        Order Now
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-nihari-charcoal border-t border-gray-800">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home" class="block px-3 py-3 text-gray-300 hover:text-nihari-gold hover:bg-gray-800 rounded-md">Home</a>
+                <a href="#menu" class="block px-3 py-3 text-gray-300 hover:text-nihari-gold hover:bg-gray-800 rounded-md">Menu</a>
+                <a href="#about" class="block px-3 py-3 text-gray-300 hover:text-nihari-gold hover:bg-gray-800 rounded-md">About</a>
+                <a href="#reviews" class="block px-3 py-3 text-gray-300 hover:text-nihari-gold hover:bg-gray-800 rounded-md">Reviews</a>
+                <a href="#contact" class="block px-3 py-3 text-gray-300 hover:text-nihari-gold hover:bg-gray-800 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden hero-pattern">
+        <div class="absolute inset-0 bg-gradient-to-b from-nihari-black via-nihari-brown/20 to-nihari-black z-0"></div>
+        <div class="absolute top-20 right-20 w-64 h-64 bg-nihari-orange/10 rounded-full blur-3xl steam"></div>
+        <div class="absolute bottom-20 left-20 w-48 h-48 bg-nihari-gold/10 rounded-full blur-3xl steam" style="animation-delay: 2s;"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="scroll-reveal">
+                <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-nihari-charcoal border border-nihari-gold/30 mb-8 shadow-lg">
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="text-nihari-gold text-sm font-semibold tracking-wider uppercase">Open 24 Hours • Always Fresh</span>
+                </div>
+                
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1]">
+                    Asli <span class="gold-text italic">Zaiqa</span>,<br>
+                    Asli <span class="gold-text italic">Tarka</span>
+                </h1>
+                
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Famous Desi Ghee Nihari, Biryani & Pulao from the heart of Liaquatabad, Karachi. 
+                    A legacy of flavor served for over 40 years.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <a href="#menu" class="group px-8 py-4 bg-gradient-to-r from-nihari-orange to-nihari-red rounded-full text-white font-bold tracking-wide shadow-lg hover:shadow-orange-500/30 transition-all transform hover:scale-105 flex items-center gap-2">
+                        View Menu <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="https://maps.google.com/?q=V2WV+RH7+C1+Area+Karachi" target="_blank" class="px-8 py-4 border border-gray-600 rounded-full text-white font-medium hover:border-nihari-gold hover:text-nihari-gold transition-all flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-3xl mx-auto">
+                    <div class="p-5 rounded-2xl bg-nihari-charcoal/60 border border-gray-800 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-nihari-gold">4.8</div>
+                        <div class="flex justify-center gap-0.5 text-nihari-gold text-xs my-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Google Rating</div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-nihari-charcoal/60 border border-gray-800 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-nihari-gold">13+</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Reviews</div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-nihari-charcoal/60 border border-gray-800 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-nihari-gold">Rs 1–1k</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Per Person</div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-nihari-charcoal/60 border border-gray-800 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-nihari-gold">24/7</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider mt-1">Open Hours</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="py-10 bg-nihari-charcoal border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-center">
+                <div class="flex items-center gap-3 text-gray-300">
+                    <i class="fas fa-clock text-nihari-gold text-xl"></i>
+                    <span class="font-medium">Open 24 Hours</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-300">
+                    <i class="fas fa-fire text-nihari-gold text-xl"></i>
+                    <span class="font-medium">Desi Ghee Tarka</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-300">
+                    <i class="fas fa-leaf text-nihari-gold text-xl"></i>
+                    <span class="font-medium">Fresh Daily</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-300">
+                    <i class="fas fa-motorcycle text-nihari-gold text-xl"></i>
+                    <span class="font-medium">Takeaway Available</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-300">
+                    <i class="fas fa-hand-holding-usd text-nihari-gold text-xl"></i>
+                    <span class="font-medium">Budget Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="scroll-reveal">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-nihari-red/10 border border-nihari-red/30 text-nihari-red text-sm font-bold mb-6">
+                        Our Legacy
+                    </div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        40+ Years of <span class="gold-text">Authentic</span><br>Nihari Mastery
+                    </h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Located in the heart of C1 Area, Liaquatabad, Karachi, Jumma Gujjar Nihari has been serving the city's most beloved <strong>Desi Ghee Nihari</strong> for over four decades.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        From slow-cooked beef nihari simmered overnight to aromatic biryani and creamy lassi, every dish carries the legacy of traditional Pakistani street food. Our secret? Pure desi ghee, hand-ground spices, and patience.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-nihari-orange/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-fire text-nihari-orange"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Slow Cooked</h4>
+                                <p class="text-sm text-gray-500">8+ hours on low flame</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-nihari-gold/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-mortar-pestle text-nihari-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Hand-Ground Spices</h4>
+                                <p class="text-sm text-gray-500">Secret family recipe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative scroll-reveal">
+                    <div class="relative rounded-3xl overflow-hidden border border-gray-800 shadow-2xl bg-gradient-to-br from-nihari-brown to-nihari-charcoal aspect-[4/5] flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-nihari-black via-transparent to-transparent z-10"></div>
+                        <div class="text-center z-20 p-10">
+                            <div class="w-28 h-28 mx-auto mb-6 rounded-full bg-gradient-to-br from-nihari-gold to-nihari-orange flex items-center justify-center shadow-xl shadow-orange-500/20">
+                                <i class="fas fa-bowl-food text-5xl text-white"></i>
+                            </div>
+                            <h3 class="font-serif text-4xl font-bold text-white mb-2">JUMMA GUJJAR</h3>
+                            <p class="text-nihari-gold font-medium tracking-widest text-sm uppercase mb-4">Nihari New</p>
+                            <div class="flex justify-center gap-1 mb-3">
+                                <i class="fas fa-star text-nihari-gold"></i>
+                                <i class="fas fa-star text-nihari-gold"></i>
+                                <i class="fas fa-star text-nihari-gold"></i>
+                                <i class="fas fa-star text-nihari-gold"></i>
+                                <i class="fas fa-star text-nihari-gold"></i>
+                            </div>
+                            <p class="text-gray-400 text-sm">4.8 out of 5 (13+ reviews)</p>
+                            <div class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-medium">
+                                <i class="fas fa-check-circle"></i> Open 24 Hours
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-24 h-24 border-t-2 border-r-2 border-nihari-gold/30 rounded-tr-3xl"></div>
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 border-b-2 border-l-2 border-nihari-gold/30 rounded-bl-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 bg-nihari-charcoal relative">
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, rgba(201,162,39,0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-nihari-orange font-semibold tracking-wider uppercase text-sm">Our Specialties</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mt-3 mb-4">Signature Menu</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Traditional recipes passed down through generations. Served with love, desi ghee, and our secret spice blend.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Nihari -->
+                <div class="menu-card rounded-2xl p-6 scroll-reveal group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-nihari-orange/20 to-nihari-red/20 flex items-center justify-center text-3xl">
+                            🍲
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-nihari-gold/10 text-nihari-gold text-xs font-bold tracking-wider">BESTSELLER</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-nihari-gold transition-colors">Desi Ghee Nihari</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Slow-cooked beef nihari simmered overnight in desi ghee with hand-ground spices. Served with fresh naan.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-800">
+                        <span class="text-nihari-orange font-bold text-lg">From Rs. 450</span>
+                        <span class="text-gray-600 text-xs"><i class="fas fa-fire mr-1"></i>Hot</span>
+                    </div>
+                </div>
+
+                <!-- Biryani -->
+                <div class="menu-card rounded-2xl p-6 scroll-reveal group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-nihari-orange/20 to-nihari-red/20 flex items-center justify-center text-3xl">
+                            🍛
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-nihari-red/10 text-nihari-red text-xs font-bold tracking-wider">POPULAR</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-nihari-gold transition-colors">Beef Biryani</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Fragrant basmati rice layered with tender beef, caramelized onions, and our signature masala. Served with raita.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-800">
+                        <span class="text-nihari-orange font-bold text-lg">From Rs. 350</span>
+                        <span class="text-gray-600 text-xs"><i class="fas fa-pepper-hot mr-1"></i>Spicy</span>
+                    </div>
+                </div>
+
+                <!-- Pulao -->
+                <div class="menu-card rounded-2xl p-6 scroll-reveal group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-nihari-orange/20 to-nihari-red/20 flex items-center justify-center text-3xl">
+                            🥘
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-nihari-gold transition-colors">Yakhni Pulao</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Aromatic rice cooked in rich bone broth with whole spices. Light, flavorful, and deeply satisfying.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-800">
+                        <span class="text-nihari-orange font-bold text-lg">From Rs. 300</span>
+                        <span class="text-gray-600 text-xs"><i class="fas fa-leaf mr-1"></i>Mild</span>
+                    </div>
+                </div>
+
+                <!-- Lassi -->
+                <div class="menu-card rounded-2xl p-6 scroll-reveal group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-nihari-orange/20 to-nihari-red/20 flex items-center justify-center text-3xl">
+                            🥛
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-bold tracking-wider">FRESH</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-nihari-gold transition-colors">Desi Lassi</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Thick, creamy yogurt lassi churned fresh daily. Available in sweet and salted variants. The perfect nihari companion.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-800">
+                        <span class="text-nihari-orange font-bold text-lg">From Rs. 120</span>
+                        <span class="text-gray-600 text-xs"><i class="fas fa-snowflake mr-1"></i>Cold</span>
+                    </div>
+                </div>
+
+                <!-- Naan -->
+                <div class="menu-card rounded-2xl p-6 scroll-reveal group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-nihari-orange/20 to-nihari-red/20 flex items-center justify-center text-3xl">
+                            🫓
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-nihari-gold transition-colors">Tandoori Naan</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Freshly baked in clay tandoor. Soft, fluffy, and perfect for scooping up every last drop of nihari gravy.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-800">
+                        <span class="text-nihari-orange font-bold text-lg">From Rs. 30</span>
+                        <span class="text-gray-600 text-xs"><i class="fas fa-fire mr-1"></i>Fresh</span>
+                    </div>
+                </div>
+
+                <!-- Kachori -->
+                <div class="menu-card rounded-2xl p-6 scroll-reveal group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-nihari-orange/20 to-nihari-red/20 flex items-center justify-center text-3xl">
+                            🥟
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-bold tracking-wider">SNACK</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-nihari-gold transition-colors">Daal Kachori</h3>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Crispy, flaky kachoris stuffed with spiced lentils. A perfect breakfast or evening snack with chutney.</p>
+                    <div class="flex justify-between items-center pt-4 border-t border-gray-800">
+                        <span class="text-nihari-orange font-bold text-lg">From Rs. 50</span>
+                        <span class="text-gray-600 text-xs"><i class="fas fa-sun mr-1"></i>Crispy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 p-8 rounded-2xl bg-gradient-to-r from-nihari-brown/30 to-nihari-charcoal border border-nihari-gold/20">
+                <p class="text-nihari-gold font-serif text-xl italic mb-2">"Lassi bhi milegi!"</p>
+                <p class="text-gray-400 text-sm">Complete your meal with our famous desi lassi — thick, creamy, and refreshing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Social Proof -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-nihari-red/5 to-nihari-orange/5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-reveal">
+                    <span class="text-nihari-orange font-semibold tracking-wider uppercase text-sm">On Social Media</span>
+                    <h2 class="font-serif text-4xl font-bold text-white mt-3 mb-6">Loved by <span class="gold-text">Thousands</span></h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4 p-5 rounded-xl bg-nihari-charcoal border border-gray-800 hover:border-nihari-orange/50 transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-facebook-f text-blue-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">25.4K+ Followers</h4>
+                                <p class="text-gray-400 text-sm">Join our community on Facebook for daily updates, new branch announcements, and exclusive offers.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 p-5 rounded-xl bg-nihari-charcoal border border-gray-800 hover:border-nihari-orange/50 transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-pink-600/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-instagram text-pink-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">2K+ Followers</h4>
+                                <p class="text-gray-400 text-sm">Follow @jumma_gujjar_niharii for mouth-watering photos and behind-the-scenes from our kitchen.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-5 rounded-xl bg-nihari-charcoal border border-gray-800 hover:border-nihari-orange/50 transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-red-600/20 flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-youtube text-red-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Featured on YouTube</h4>
+                                <p class="text-gray-400 text-sm">Recognized by food vloggers as one of Karachi's hidden gems. 96.4K+ views on feature videos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative scroll-reveal">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4 mt-8">
+                            <div class="h-48 rounded-2xl bg-gradient-to-br from-nihari-brown to-nihari-charcoal border border-gray-700 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-bowl-food text-4xl text-nihari-orange/50 mb-2"></i>
+                                    <p class="text-gray-500 text-xs">Nihari</p>
+                                </div>
+                            </div>
+                            <div class="h-64 rounded-2xl bg-gradient-to-br from-nihari-brown to-nihari-charcoal border border-gray-700 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-drumstick-bite text-4xl text-nihari-gold/50 mb-2"></i>
+                                    <p class="text-gray-500 text-xs">Biryani</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-64 rounded-2xl bg-gradient-to-br from-nihari-brown to-nihari-charcoal border border-gray-700 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-mug-hot text-4xl text-nihari-red/50 mb-2"></i>
+                                    <p class="text-gray-500 text-xs">Lassi</p>
+                                </div>
+                            </div>
+                            <div class="h-48 rounded-2xl bg-gradient-to-br from-nihari-brown to-nihari-charcoal border border-gray-700 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i class="fas fa-bread-slice text-4xl text-orange-500/50 mb-2"></i>
+                                    <p class="text-gray-500 text-xs">Naan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-nihari-charcoal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-nihari-gold font-semibold tracking-wider uppercase text-sm">Testimonials</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mt-3 mb-4">What People Say</h2>
+                <div class="flex justify-center items-center gap-3 mb-4">
+                    <span class="text-5xl font-bold text-white">4.8</span>
+                    <div class="flex flex-col items-start">
+                        <div class="flex text-nihari-gold text-lg">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-500 text-sm">13 Google Reviews</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl bg-nihari-black border-l-4 border-nihari-gold scroll-reveal">
+                    <div class="flex text-nihari-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic leading-relaxed">"Best nihari in Liaquatabad! The desi ghee tarka is unmatched. Open 24 hours so I can satisfy my cravings anytime. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-nihari-orange to-nihari-red flex items-center justify-center text-white font-bold">A</div>
+                        <div>
+                            <h4 class="text-white font-medium text-sm">Ahmed K.</h4>
+                            <p class="text-gray-500 text-xs">Google Review • Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-nihari-black border-l-4 border-nihari-gold scroll-reveal">
+                    <div class="flex text-nihari-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic leading-relaxed">"The beef biryani is incredible — perfectly spiced and generous portions. Budget friendly too. A hidden gem in Karachi's food scene!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <h4 class="text-white font-medium text-sm">Saqib M.</h4>
+                            <p class="text-gray-500 text-xs">YouTube Feature • 96K+ views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-xl bg-nihari-black border-l-4 border-nihari-gold scroll-reveal">
+                    <div class="flex text-nihari-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic leading-relaxed">"Authentic taste, desi ghee wali nihari, and the lassi is the perfect finish. This is the real deal — no fancy gimmicks, just pure flavor."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-white font-bold">F</div>
+                        <div>
+                            <h4 class="text-white font-medium text-sm">Foodie Karachi</h4>
+                            <p class="text-gray-500 text-xs">Instagram Follower</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="scroll-reveal">
+                    <span class="text-nihari-orange font-semibold tracking-wider uppercase text-sm">Visit Us</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mt-3 mb-8">Find Your Way to <span class="gold-text">Flavor</span></h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-5 rounded-xl bg-nihari-charcoal border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-nihari-red/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-nihari-red text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Location</h4>
+                                <p class="text-gray-400">V2WV+RH7, C1 Area<br>Liaquatabad, Karachi</p>
+                                <a href="https://maps.google.com/?q=V2WV+RH7+C1+Area+Karachi" target="_blank" class="text-nihari-gold text-sm mt-2 inline-block hover:underline">Open in Google Maps →</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-5 rounded-xl bg-nihari-charcoal border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-green-500 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Hours</h4>
+                                <p class="text-gray-400 text-lg">Open 24 Hours • 7 Days a Week</p>
+                                <p class="text-gray-500 text-sm mt-1">People typically spend 30 min here</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-5 rounded-xl bg-nihari-charcoal border border-gray-800">
+                            <div class="w-12 h-12 rounded-full bg-nihari-gold/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-wallet text-nihari-gold text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold mb-1">Budget</h4>
+                                <p class="text-gray-400 text-lg">Rs 1 – 1,000 per person</p>
+                                <p class="text-gray-500 text-sm mt-1">Reported by 7 people • Cash only</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-white font-bold mb-4">Follow the Flavor</h4>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/JummaGujjarNihari/" target="_blank" class="w-12 h-12 rounded-full bg-nihari-charcoal border border-gray-700 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:border-blue-400 transition-all">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jumma_gujjar_niharii/" target="_blank" class="w-12 h-12 rounded-full bg-nihari-charcoal border border-gray-700 flex items-center justify-center text-gray-400 hover:text-pink-400 hover:border-pink-400 transition-all">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-nihari-charcoal border border-gray-700 flex items-center justify-center text-gray-400 hover:text-red-400 hover:border-red-400 transition-all">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-reveal">
+                    <div class="h-full min-h-[400px] rounded-3xl overflow-hidden border border-gray-800 relative bg-gradient-to-br from-nihari-brown to-nihari-charcoal">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-nihari-gold/10 flex items-center justify-center">
+                                    <i class="fas fa-map-marked-alt text-3xl text-nihari-gold"></i>
+                                </div>
+                                <h3 class="text-white font-bold text-xl mb-2">Liaquatabad, Karachi</h3>
+                                <p class="text-gray-400 mb-2">C1 Area • Near Main Road</p>
+                                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-sm font-medium mb-6">
+                                    <i class="fas fa-check-circle"></i> Open 24 Hours
+                                </div>
+                                <br>
+                                <a href="https://maps.google.com/?q=V2WV+RH7+C1+Area+Karachi" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-nihari-black rounded-full font-bold hover:bg-nihari-gold transition-colors">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(rgba(201,162,39,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(201,162,39,0.3) 1px, transparent 1px); background-size: 40px 40px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-nihari-black border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-nihari-gold to-nihari-orange flex items-center justify-center">
+                            <i class="fas fa-utensils text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-white">JUMMA GUJJAR</h3>
+                            <p class="text-[10px] text-nihari-gold tracking-wider uppercase">NIHARI NEW</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-500 max-w-sm leading-relaxed">
+                        Serving authentic desi ghee nihari, biryani, and pulao in the heart of Liaquatabad, Karachi for over 40 years. Asli zaiqa, asli tarka.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-500 hover:text-nihari-gold transition-colors">Home</a></li>
+                        <li><a href="#menu" class="text-gray-500 hover:text-nihari-gold transition-colors">Menu</a></li>
+                        <li><a href="#about" class="text-gray-500 hover:text-nihari-gold transition-colors">About</a></li>
+                        <li><a href="#contact" class="text-gray-500 hover:text-nihari-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6">Popular Dishes</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-500 hover:text-nihari-gold transition-colors">Desi Ghee Nihari</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-nihari-gold transition-colors">Beef Biryani</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-nihari-gold transition-colors">Yakhni Pulao</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-nihari-gold transition-colors">Desi Lassi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 text-sm"> Jumma Gujjar Nihari. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <span class="text-gray-600 text-sm">Made with <i class="fas fa-heart text-nihari-red"></i> for Karachi</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-nihari-gold text-nihari-black flex items-center justify-center shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 hover:bg-white z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+n        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                mobileMenu.classList.add('hidden');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+                navbar.style.background = 'rgba(12, 12, 12, 0.98)';
+            } else {
+                navbar.classList.remove('shadow-lg');
+                navbar.style.background = 'rgba(12, 12, 12, 0.92)';
+            }
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                backToTop.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
+
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
